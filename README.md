@@ -1,22 +1,85 @@
 #Rectangle
-for i in range(5):
-  for j in range(1,7):
+n=int(input("enter any number: "))
+for i in range(n):
+  for j in range(1,n+1):
     print(j,end=" ")
   print(" ")
 
-#Left_Justified_Triangle
-for i in range(5):
+#Increasing Triangle/Left Justified Triangle
+n= int(input("Enter any nuber: "))
+for i in range(n+1):
   for j in range(1,i+1):
     print(j,end=" ")
   print(" ")
   
-#Right_Justified_Triangle
-n=5
-var = n-1
-for i in range(1,n):
-  print(" "*var,end=" ")
-  for j in range(0,i):
-    
+  
+#Increasing Triangle(Star increasing)
+n = int(input("Enter any number: "))
+for i in range(n+1):
+  for j in range(1,i+1):
+    print("*",end=" ")
+  print(" ")
+  
+  
+#Right Justified Triangle(Space decreasing,star increasing)
+n=int(input("Enter a number: "))
+for i in range(n):
+  for j in range(i,n):
+    print(" ",end=" ")
+  for k in range(i+1):
+    print(" *",end="")
+  print(" ")
+  
+  
+#Right Justified Triangle(Space decreasing,number increasing)
+n = int(input("Enter any number: "))
+for i in range(1,n+1):
+  for j in range(i,n+1):
+    print(" ",end = " ")
+  for k in range(1,i+1):
+    print("",k,end="")
+  print(" ")
+
+  
+
+#Decreasing Triangle
+n = int(input("Enter any number: "))
+for i in range(1,n+1):
+  for j in range(i,n+1):
+    print(j,end=" ")
+  print(" ")
+  
+  
+#Decreasing Triangle(star)
+n = int(input("Enter any number: "))
+for i in range(1,n+1):
+  for j in range(i,n+1):
+    print("*",end=" ")
+  print(" ")
+  
+  
+#Hill Pattern(Star)
+n = int(input("Enter a number: "))
+for i in range(n):
+  for j in range(i,n):
+    print("",end=" ")
+  for j in range(i):
+    print("*",end="")
+  for j in range(i+1):
     print("*",end="")
   print(" ")
-  var-=1
+  
+  
+#Hill pattern(Number)
+n = int(input("Enter any number: "))
+for i in range(1,n+1):
+  for j in range(i,n+1):
+    print("",end = " ")
+  for k in range(1,i+1):
+    print(k,end="")
+  for l in range(1,i):
+    print(l,end="")
+  print("")
+  
+  
+  
